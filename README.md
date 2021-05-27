@@ -6,4 +6,6 @@ This repository contains sample app for the Adori SDK for iOS. These demonstrate
 ## Run the sample app
 To run the sample app, simply go to the project folder and run `pod install`. Open the project, build and run the application.
 
+## Documentation 
 
+Documentation for the integrated SDK can be found  [here](https://help.adorilabs.com/sdk/ios/)
