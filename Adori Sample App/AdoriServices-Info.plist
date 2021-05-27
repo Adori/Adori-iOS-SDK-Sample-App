@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>apiKey</key>
+	<dict>
+		<key>createdOn</key>
+		<string>2020-01-22T15:46:15+00:00</string>
+		<key>key</key>
+		<string>api-key-kS1plDIx8YZ0hL5klbddP6kg2dylgO9QLz7a6qqitLnLEfYOib5tIeHpt2iwBeq7fRxf5RyhvUO6J4AQK8qpzSW6dVIETxi5Sv1Be9g61EnzCCevP4AgpmZTS8gV4MbngjhmTVCm2mcLGAwNzg14ZVYaO1QRdOuVOXSP4R4mFWBKqQvA4uoVIkNKK0LiiUaWA9g6pZIbvWIV1cUUSAO5oV9cB9gA4vln2k3Sa3DQAab6dX5KnSlytGuA</string>
+		<key>updatedOn</key>
+		<string>2020-01-22T15:46:15+00:00</string>
+	</dict>
+	<key>baseUrl</key>
+	<string>https://prod.adorilabs.com/service/surfaces/v6</string>
+	<key>createdOn</key>
+	<string>2020-01-22T15:46:09+00:00</string>
+	<key>name</key>
+	<string>Adori Sample iOS app</string>
+	<key>packageId</key>
+	<string>com.adorilabs.example.ios</string>
+	<key>type</key>
+	<string>IOS</string>
+	<key>updatedOn</key>
+	<string>2020-01-22T15:46:09+00:00</string>
+</dict>
+</plist>
