@@ -16,10 +16,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PIt-W0-bUq">
-                                <rect key="frame" x="105" y="413" width="205" height="70"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PIt-W0-bUq">
+                                <rect key="frame" x="20" y="413" width="374" height="70"/>
                                 <color key="backgroundColor" red="0.69803921570000005" green="0.12941176469999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="0Fr-2k-xzy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                 <state key="normal" title="Play">
                                     <color key="titleColor" red="0.88235294119999996" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -27,9 +30,27 @@
                                     <action selector="playBtnClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TgS-4Q-SMJ"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Adori SDK Sample App" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nd9-fc-HZT">
+                                <rect key="frame" x="20" y="105" width="374" height="69"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="69" id="aHd-Ez-uU2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="PIt-W0-bUq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3ql-QB-ean"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nd9-fc-HZT" secondAttribute="trailing" constant="20" id="4Ed-qA-psd"/>
+                            <constraint firstItem="PIt-W0-bUq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="9uA-XO-IVU"/>
+                            <constraint firstItem="PIt-W0-bUq" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="N37-YJ-cDG"/>
+                            <constraint firstItem="nd9-fc-HZT" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="61" id="Tdb-cK-NDO"/>
+                            <constraint firstItem="nd9-fc-HZT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Y3p-yd-fOh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="PIt-W0-bUq" secondAttribute="trailing" constant="20" id="ZKg-Io-0Vu"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="playButton" destination="PIt-W0-bUq" id="I2A-Z0-gfT"/>
