@@ -12,6 +12,10 @@ import AdoriPlayerUI
 import AdoriAPIService
 
 class WithAdoriPlayerViewController: UIViewController, AdoriPlayerDelegate {
+    func tagInteracted(interactedObject: TagObject) {
+        print("Interacted with the tag")
+    }
+    
    
     
 
@@ -29,6 +33,9 @@ class WithAdoriPlayerViewController: UIViewController, AdoriPlayerDelegate {
         // Step 2a : Setup Login details here
         // This should be called and setup when the user logs in
         AdoriPlayer.shared.setUserId(userId: "Adori_User_ID")
+        
+        AdoriPlayer.shared.setActionEnabled(enabled: false)
+        AdoriPlayer.shared.setNextPreviousEnabled(enabled: false)
     }
     
 
@@ -41,39 +48,39 @@ class WithAdoriPlayerViewController: UIViewController, AdoriPlayerDelegate {
     
     //MARK: AdoriPlayerDelegate
     
-    func episodeClipped(episode: Episode, atTime: Int) {
+    func episodeClipped(episode: AdoriEpisode, atTime: Int) {
         print("Episode clipped")
     }
     
-    func episodeBookmarked(episode: Episode, atTime: Int) {
+    func episodeBookmarked(episode: AdoriEpisode, atTime: Int) {
         print("Episode bookmarked")
     }
     
-    func episodeAddedToPlaylist(episode: Episode, playlisted: Bool) {
+    func episodeAddedToPlaylist(episode: AdoriEpisode, playlisted: Bool) {
         print("Episode added to playlist")
     }
     
-    func episodeLikeClicked(episode: Episode, liked: Bool) {
+    func episodeLikeClicked(episode: AdoriEpisode, liked: Bool) {
         print("Episode liked")
     }
     
-    func episodeDetailsClicked(episode: Episode) {
+    func episodeDetailsClicked(episode: AdoriEpisode) {
         print("Episode details button clicked")
     }
     
-    func showLogin(episode: Episode) {
+    func showLogin(episode: AdoriEpisode) {
         print("Should show login")
     }
     
-    func episodeListened(episode: Episode, atTime: Int) {
+    func episodeListened(episode: AdoriEpisode, atTime: Int) {
         print("Episode timer")
     }
     
-    func onFinished(episode: Episode) {
+    func onFinished(episode: AdoriEpisode) {
         print("Completed listening to the audio")
     }
     
-    func onShare(episode: Episode) {
+    func onShare(episode: AdoriEpisode) {
         print("Share button clicked")
     }
     

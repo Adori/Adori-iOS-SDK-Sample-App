@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9ADA7DAB786CAEF390A83126 /* Pods_Adori_Sample_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76D527E855A9B4D746AE7AF5 /* Pods_Adori_Sample_App.framework */; };
 		BB0C8CBB2670BAEC005D78E3 /* WithAdoriPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0C8CBA2670BAEC005D78E3 /* WithAdoriPlayerViewController.swift */; };
 		BB0C8CBD2670BC9A005D78E3 /* withoutAdoriPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0C8CBC2670BC9A005D78E3 /* withoutAdoriPlayerViewController.swift */; };
 		BB7689E4265E71DF003A15AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7689E3265E71DF003A15AB /* AppDelegate.swift */; };
@@ -16,28 +17,13 @@
 		BB7689ED265E71E1003A15AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB7689EC265E71E1003A15AB /* Assets.xcassets */; };
 		BB7689F0265E71E1003A15AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB7689EE265E71E1003A15AB /* LaunchScreen.storyboard */; };
 		BB9F9208265FB65800561C30 /* AdoriServices-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BB9F9207265FB65800561C30 /* AdoriServices-Info.plist */; };
-		E6B3E6D48A9C55B062E011B2 /* Pods_Adori_Sample_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76822962B4D5A5EEA4E5423A /* Pods_Adori_Sample_App.framework */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		BB9F91EE265FB34400561C30 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
-		62120D04102EAAD321A9AAD4 /* Pods-Adori Sample App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Adori Sample App.release.xcconfig"; path = "Target Support Files/Pods-Adori Sample App/Pods-Adori Sample App.release.xcconfig"; sourceTree = "<group>"; };
-		726DC1113778F0FEF9515F80 /* Pods-Adori Sample App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Adori Sample App.debug.xcconfig"; path = "Target Support Files/Pods-Adori Sample App/Pods-Adori Sample App.debug.xcconfig"; sourceTree = "<group>"; };
-		76822962B4D5A5EEA4E5423A /* Pods_Adori_Sample_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Adori_Sample_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		76D527E855A9B4D746AE7AF5 /* Pods_Adori_Sample_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Adori_Sample_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB0C8CBA2670BAEC005D78E3 /* WithAdoriPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WithAdoriPlayerViewController.swift; sourceTree = "<group>"; };
 		BB0C8CBC2670BC9A005D78E3 /* withoutAdoriPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = withoutAdoriPlayerViewController.swift; sourceTree = "<group>"; };
+		BB3615A026EA9DB50044282A /* GoogleMobileAds.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = GoogleMobileAds.xcframework; path = Pods/AdoriiOSSDK/GoogleMobileAds.xcframework; sourceTree = "<group>"; };
 		BB7689E0265E71DF003A15AB /* Adori Sample App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Adori Sample App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB7689E3265E71DF003A15AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BB7689E5265E71DF003A15AB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -47,6 +33,8 @@
 		BB7689EF265E71E1003A15AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BB7689F1265E71E1003A15AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BB9F9207265FB65800561C30 /* AdoriServices-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "AdoriServices-Info.plist"; sourceTree = "<group>"; };
+		BC8CB1CBE914B03AE20C7F83 /* Pods-Adori Sample App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Adori Sample App.release.xcconfig"; path = "Target Support Files/Pods-Adori Sample App/Pods-Adori Sample App.release.xcconfig"; sourceTree = "<group>"; };
+		C8195AAA7FF1F1B522870A03 /* Pods-Adori Sample App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Adori Sample App.debug.xcconfig"; path = "Target Support Files/Pods-Adori Sample App/Pods-Adori Sample App.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,7 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E6B3E6D48A9C55B062E011B2 /* Pods_Adori_Sample_App.framework in Frameworks */,
+				9ADA7DAB786CAEF390A83126 /* Pods_Adori_Sample_App.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,8 +52,8 @@
 		03686D6F152FB6E062A44B9D /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				726DC1113778F0FEF9515F80 /* Pods-Adori Sample App.debug.xcconfig */,
-				62120D04102EAAD321A9AAD4 /* Pods-Adori Sample App.release.xcconfig */,
+				C8195AAA7FF1F1B522870A03 /* Pods-Adori Sample App.debug.xcconfig */,
+				BC8CB1CBE914B03AE20C7F83 /* Pods-Adori Sample App.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -73,7 +61,8 @@
 		31AA5DB6310A366AF920DD2F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				76822962B4D5A5EEA4E5423A /* Pods_Adori_Sample_App.framework */,
+				BB3615A026EA9DB50044282A /* GoogleMobileAds.xcframework */,
+				76D527E855A9B4D746AE7AF5 /* Pods_Adori_Sample_App.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -120,12 +109,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BB7689F4265E71E1003A15AB /* Build configuration list for PBXNativeTarget "Adori Sample App" */;
 			buildPhases = (
-				BE8BA442CB3FCB2122D888D2 /* [CP] Check Pods Manifest.lock */,
+				31C9F1BDBAB279C6462E4322 /* [CP] Check Pods Manifest.lock */,
 				BB7689DC265E71DF003A15AB /* Sources */,
 				BB7689DD265E71DF003A15AB /* Frameworks */,
 				BB7689DE265E71DF003A15AB /* Resources */,
-				BB9F91EE265FB34400561C30 /* Embed Frameworks */,
-				6757D27567569067343B1602 /* [CP] Embed Pods Frameworks */,
+				0D93F9C5F52BCC43622967A2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -183,7 +171,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		6757D27567569067343B1602 /* [CP] Embed Pods Frameworks */ = {
+		0D93F9C5F52BCC43622967A2 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -200,7 +188,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Adori Sample App/Pods-Adori Sample App-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		BE8BA442CB3FCB2122D888D2 /* [CP] Check Pods Manifest.lock */ = {
+		31C9F1BDBAB279C6462E4322 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -377,7 +365,7 @@
 		};
 		BB7689F5265E71E1003A15AB /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 726DC1113778F0FEF9515F80 /* Pods-Adori Sample App.debug.xcconfig */;
+			baseConfigurationReference = C8195AAA7FF1F1B522870A03 /* Pods-Adori Sample App.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -388,6 +376,32 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"AdoriAPIService\"",
+					"-framework",
+					"\"AdoriAudioPlayer\"",
+					"-framework",
+					"\"AdoriDecoder\"",
+					"-framework",
+					"\"AdoriPlayerUI\"",
+					"-framework",
+					"\"AdoriTagsUI\"",
+					"-framework",
+					"\"Cache\"",
+					"-framework",
+					"\"DLRadioButton\"",
+					"-framework",
+					"\"MDFInternationalization\"",
+					"-framework",
+					"\"MDFTextAccessibility\"",
+					"-framework",
+					"\"MaterialComponents\"",
+					"-framework",
+					"\"UBottomSheet\"",
+					"-ObjC",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.adorilabs.example.ios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -397,7 +411,7 @@
 		};
 		BB7689F6265E71E1003A15AB /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 62120D04102EAAD321A9AAD4 /* Pods-Adori Sample App.release.xcconfig */;
+			baseConfigurationReference = BC8CB1CBE914B03AE20C7F83 /* Pods-Adori Sample App.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -407,6 +421,32 @@
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"AdoriAPIService\"",
+					"-framework",
+					"\"AdoriAudioPlayer\"",
+					"-framework",
+					"\"AdoriDecoder\"",
+					"-framework",
+					"\"AdoriPlayerUI\"",
+					"-framework",
+					"\"AdoriTagsUI\"",
+					"-framework",
+					"\"Cache\"",
+					"-framework",
+					"\"DLRadioButton\"",
+					"-framework",
+					"\"MDFInternationalization\"",
+					"-framework",
+					"\"MDFTextAccessibility\"",
+					"-framework",
+					"\"MaterialComponents\"",
+					"-framework",
+					"\"UBottomSheet\"",
+					"-ObjC",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.adorilabs.example.ios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
