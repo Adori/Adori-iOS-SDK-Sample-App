@@ -10,6 +10,9 @@
 		9ADA7DAB786CAEF390A83126 /* Pods_Adori_Sample_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76D527E855A9B4D746AE7AF5 /* Pods_Adori_Sample_App.framework */; };
 		BB0C8CBB2670BAEC005D78E3 /* WithAdoriPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0C8CBA2670BAEC005D78E3 /* WithAdoriPlayerViewController.swift */; };
 		BB0C8CBD2670BC9A005D78E3 /* withoutAdoriPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0C8CBC2670BC9A005D78E3 /* withoutAdoriPlayerViewController.swift */; };
+		BB251A8226FA170E0018D8F1 /* UniversalAudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB251A8126FA170E0018D8F1 /* UniversalAudioPlayer.swift */; };
+		BB251A8426FA17BB0018D8F1 /* FoundationExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB251A8326FA17BB0018D8F1 /* FoundationExtensions.swift */; };
+		BB251A8826FA18200018D8F1 /* QueuePlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB251A8726FA18200018D8F1 /* QueuePlayer.swift */; };
 		BB7689E4265E71DF003A15AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7689E3265E71DF003A15AB /* AppDelegate.swift */; };
 		BB7689E6265E71DF003A15AB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7689E5265E71DF003A15AB /* SceneDelegate.swift */; };
 		BB7689E8265E71DF003A15AB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7689E7265E71DF003A15AB /* ViewController.swift */; };
@@ -23,6 +26,9 @@
 		76D527E855A9B4D746AE7AF5 /* Pods_Adori_Sample_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Adori_Sample_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB0C8CBA2670BAEC005D78E3 /* WithAdoriPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WithAdoriPlayerViewController.swift; sourceTree = "<group>"; };
 		BB0C8CBC2670BC9A005D78E3 /* withoutAdoriPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = withoutAdoriPlayerViewController.swift; sourceTree = "<group>"; };
+		BB251A8126FA170E0018D8F1 /* UniversalAudioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversalAudioPlayer.swift; sourceTree = "<group>"; };
+		BB251A8326FA17BB0018D8F1 /* FoundationExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoundationExtensions.swift; sourceTree = "<group>"; };
+		BB251A8726FA18200018D8F1 /* QueuePlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QueuePlayer.swift; sourceTree = "<group>"; };
 		BB3615A026EA9DB50044282A /* GoogleMobileAds.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = GoogleMobileAds.xcframework; path = Pods/AdoriiOSSDK/GoogleMobileAds.xcframework; sourceTree = "<group>"; };
 		BB7689E0265E71DF003A15AB /* Adori Sample App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Adori Sample App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB7689E3265E71DF003A15AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -96,8 +102,11 @@
 				BB7689EC265E71E1003A15AB /* Assets.xcassets */,
 				BB7689EE265E71E1003A15AB /* LaunchScreen.storyboard */,
 				BB7689F1265E71E1003A15AB /* Info.plist */,
+				BB251A8726FA18200018D8F1 /* QueuePlayer.swift */,
 				BB0C8CBA2670BAEC005D78E3 /* WithAdoriPlayerViewController.swift */,
 				BB0C8CBC2670BC9A005D78E3 /* withoutAdoriPlayerViewController.swift */,
+				BB251A8126FA170E0018D8F1 /* UniversalAudioPlayer.swift */,
+				BB251A8326FA17BB0018D8F1 /* FoundationExtensions.swift */,
 			);
 			path = "Adori Sample App";
 			sourceTree = "<group>";
@@ -217,9 +226,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB251A8426FA17BB0018D8F1 /* FoundationExtensions.swift in Sources */,
 				BB7689E8265E71DF003A15AB /* ViewController.swift in Sources */,
+				BB251A8226FA170E0018D8F1 /* UniversalAudioPlayer.swift in Sources */,
 				BB0C8CBD2670BC9A005D78E3 /* withoutAdoriPlayerViewController.swift in Sources */,
 				BB0C8CBB2670BAEC005D78E3 /* WithAdoriPlayerViewController.swift in Sources */,
+				BB251A8826FA18200018D8F1 /* QueuePlayer.swift in Sources */,
 				BB7689E4265E71DF003A15AB /* AppDelegate.swift in Sources */,
 				BB7689E6265E71DF003A15AB /* SceneDelegate.swift in Sources */,
 			);

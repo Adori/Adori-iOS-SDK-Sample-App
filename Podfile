@@ -6,7 +6,7 @@ source 'https://github.com/Adori/cocoapod-specs.git'
 target 'Adori Sample App' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
-pod 'AdoriiOSSDK', '~> 2.1.8'
+pod 'AdoriiOSSDK', '~> 2.1.14'
 
   # Pods for Adori Sample App
 

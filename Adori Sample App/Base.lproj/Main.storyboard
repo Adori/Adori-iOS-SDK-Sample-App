@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mHn-q3-uZw">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mHn-q3-uZw">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -155,10 +156,19 @@
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v4T-sk-N20">
                                 <rect key="frame" x="20" y="298" width="374" height="375"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="3dad1cc1-05ce-41c0-87b7-973fc2369d66" translatesAutoresizingMaskIntoConstraints="NO" id="BM7-FE-5Ix">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="375"/>
+                                    </imageView>
+                                </subviews>
                                 <color key="backgroundColor" systemColor="systemGray5Color"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="374" id="7xk-Zm-iZ2"/>
+                                    <constraint firstItem="BM7-FE-5Ix" firstAttribute="top" secondItem="v4T-sk-N20" secondAttribute="top" id="8Uy-bl-MND"/>
+                                    <constraint firstAttribute="trailing" secondItem="BM7-FE-5Ix" secondAttribute="trailing" id="L7g-ZD-Acc"/>
+                                    <constraint firstItem="BM7-FE-5Ix" firstAttribute="leading" secondItem="v4T-sk-N20" secondAttribute="leading" id="Ta6-TJ-aIM"/>
                                     <constraint firstAttribute="height" constant="375" id="fF1-T5-UF1"/>
+                                    <constraint firstAttribute="bottom" secondItem="BM7-FE-5Ix" secondAttribute="bottom" id="gMO-4v-TP7"/>
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mpi-4j-cTE">
@@ -169,7 +179,7 @@
                                     <constraint firstAttribute="height" constant="108" id="ZyZ-HN-mlE"/>
                                     <constraint firstAttribute="width" constant="67" id="ip4-NF-3zK"/>
                                 </constraints>
-                                <state key="normal" image="play.circle.fill" catalog="system">
+                                <state key="normal" image="pause.circle.fill" catalog="system">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="45"/>
                                 </state>
@@ -220,8 +230,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="3dad1cc1-05ce-41c0-87b7-973fc2369d66" width="1480" height="1480"/>
         <image name="ItunesArtwork" width="512" height="512"/>
-        <image name="play.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="pause.circle.fill" catalog="system" width="128" height="121"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
