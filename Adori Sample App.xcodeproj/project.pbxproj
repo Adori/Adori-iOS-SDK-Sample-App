@@ -7,12 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		20227B763B644D73F0426F9E /* Pods_Adori_Sample_App_Watch_WatchKit_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EE66061C6970217CC3EF9E1 /* Pods_Adori_Sample_App_Watch_WatchKit_Extension.framework */; };
 		9ADA7DAB786CAEF390A83126 /* Pods_Adori_Sample_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76D527E855A9B4D746AE7AF5 /* Pods_Adori_Sample_App.framework */; };
 		BB0C8CBB2670BAEC005D78E3 /* WithAdoriPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0C8CBA2670BAEC005D78E3 /* WithAdoriPlayerViewController.swift */; };
 		BB0C8CBD2670BC9A005D78E3 /* withoutAdoriPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0C8CBC2670BC9A005D78E3 /* withoutAdoriPlayerViewController.swift */; };
 		BB251A8226FA170E0018D8F1 /* UniversalAudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB251A8126FA170E0018D8F1 /* UniversalAudioPlayer.swift */; };
 		BB251A8426FA17BB0018D8F1 /* FoundationExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB251A8326FA17BB0018D8F1 /* FoundationExtensions.swift */; };
 		BB251A8826FA18200018D8F1 /* QueuePlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB251A8726FA18200018D8F1 /* QueuePlayer.swift */; };
+		BB31284326FE17FF001EE611 /* QueuePlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB251A8726FA18200018D8F1 /* QueuePlayer.swift */; };
+		BB6DCBBA26FDFA3C00139082 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB6DCBB826FDFA3C00139082 /* Interface.storyboard */; };
+		BB6DCBBC26FDFA3E00139082 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB6DCBBB26FDFA3E00139082 /* Assets.xcassets */; };
+		BB6DCBC226FDFA3E00139082 /* Adori Sample App Watch WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = BB6DCBC126FDFA3E00139082 /* Adori Sample App Watch WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		BB6DCBC726FDFA3E00139082 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6DCBC626FDFA3E00139082 /* InterfaceController.swift */; };
+		BB6DCBC926FDFA3E00139082 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6DCBC826FDFA3E00139082 /* ExtensionDelegate.swift */; };
+		BB6DCBCB26FDFA3E00139082 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6DCBCA26FDFA3E00139082 /* ComplicationController.swift */; };
+		BB6DCBCD26FDFA3F00139082 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB6DCBCC26FDFA3F00139082 /* Assets.xcassets */; };
+		BB6DCBD126FDFA3F00139082 /* Adori Sample App Watch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = BB6DCBB626FDFA3C00139082 /* Adori Sample App Watch.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		BB7689E4265E71DF003A15AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7689E3265E71DF003A15AB /* AppDelegate.swift */; };
 		BB7689E6265E71DF003A15AB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7689E5265E71DF003A15AB /* SceneDelegate.swift */; };
 		BB7689E8265E71DF003A15AB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7689E7265E71DF003A15AB /* ViewController.swift */; };
@@ -22,14 +32,67 @@
 		BB9F9208265FB65800561C30 /* AdoriServices-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BB9F9207265FB65800561C30 /* AdoriServices-Info.plist */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		BB6DCBC326FDFA3E00139082 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BB7689D8265E71DF003A15AB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BB6DCBC026FDFA3E00139082;
+			remoteInfo = "Adori Sample App Watch WatchKit Extension";
+		};
+		BB6DCBCF26FDFA3F00139082 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BB7689D8265E71DF003A15AB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BB6DCBB526FDFA3C00139082;
+			remoteInfo = "Adori Sample App Watch";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BB6DCBD226FDFA3F00139082 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				BB6DCBD126FDFA3F00139082 /* Adori Sample App Watch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB6DCBD526FDFA3F00139082 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				BB6DCBC226FDFA3E00139082 /* Adori Sample App Watch WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		76D527E855A9B4D746AE7AF5 /* Pods_Adori_Sample_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Adori_Sample_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7EE66061C6970217CC3EF9E1 /* Pods_Adori_Sample_App_Watch_WatchKit_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Adori_Sample_App_Watch_WatchKit_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8BC8B040F1D74E214FFDF6F /* Pods-Adori Sample App Watch WatchKit Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Adori Sample App Watch WatchKit Extension.release.xcconfig"; path = "Target Support Files/Pods-Adori Sample App Watch WatchKit Extension/Pods-Adori Sample App Watch WatchKit Extension.release.xcconfig"; sourceTree = "<group>"; };
 		BB0C8CBA2670BAEC005D78E3 /* WithAdoriPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WithAdoriPlayerViewController.swift; sourceTree = "<group>"; };
 		BB0C8CBC2670BC9A005D78E3 /* withoutAdoriPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = withoutAdoriPlayerViewController.swift; sourceTree = "<group>"; };
 		BB251A8126FA170E0018D8F1 /* UniversalAudioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversalAudioPlayer.swift; sourceTree = "<group>"; };
 		BB251A8326FA17BB0018D8F1 /* FoundationExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoundationExtensions.swift; sourceTree = "<group>"; };
 		BB251A8726FA18200018D8F1 /* QueuePlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QueuePlayer.swift; sourceTree = "<group>"; };
 		BB3615A026EA9DB50044282A /* GoogleMobileAds.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = GoogleMobileAds.xcframework; path = Pods/AdoriiOSSDK/GoogleMobileAds.xcframework; sourceTree = "<group>"; };
+		BB6DCBB626FDFA3C00139082 /* Adori Sample App Watch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Adori Sample App Watch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB6DCBB926FDFA3C00139082 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		BB6DCBBB26FDFA3E00139082 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BB6DCBC126FDFA3E00139082 /* Adori Sample App Watch WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Adori Sample App Watch WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB6DCBC626FDFA3E00139082 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		BB6DCBC826FDFA3E00139082 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		BB6DCBCA26FDFA3E00139082 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		BB6DCBCC26FDFA3F00139082 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BB6DCBCE26FDFA3F00139082 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BB7689E0265E71DF003A15AB /* Adori Sample App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Adori Sample App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB7689E3265E71DF003A15AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BB7689E5265E71DF003A15AB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -41,9 +104,25 @@
 		BB9F9207265FB65800561C30 /* AdoriServices-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "AdoriServices-Info.plist"; sourceTree = "<group>"; };
 		BC8CB1CBE914B03AE20C7F83 /* Pods-Adori Sample App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Adori Sample App.release.xcconfig"; path = "Target Support Files/Pods-Adori Sample App/Pods-Adori Sample App.release.xcconfig"; sourceTree = "<group>"; };
 		C8195AAA7FF1F1B522870A03 /* Pods-Adori Sample App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Adori Sample App.debug.xcconfig"; path = "Target Support Files/Pods-Adori Sample App/Pods-Adori Sample App.debug.xcconfig"; sourceTree = "<group>"; };
+		D63B2448F2FC612FE514A3CF /* Pods-Adori Sample App Watch WatchKit Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Adori Sample App Watch WatchKit Extension.debug.xcconfig"; path = "Target Support Files/Pods-Adori Sample App Watch WatchKit Extension/Pods-Adori Sample App Watch WatchKit Extension.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		18BD54CA702935200530461E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB6DCBBE26FDFA3E00139082 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20227B763B644D73F0426F9E /* Pods_Adori_Sample_App_Watch_WatchKit_Extension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BB7689DD265E71DF003A15AB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -60,6 +139,8 @@
 			children = (
 				C8195AAA7FF1F1B522870A03 /* Pods-Adori Sample App.debug.xcconfig */,
 				BC8CB1CBE914B03AE20C7F83 /* Pods-Adori Sample App.release.xcconfig */,
+				D63B2448F2FC612FE514A3CF /* Pods-Adori Sample App Watch WatchKit Extension.debug.xcconfig */,
+				B8BC8B040F1D74E214FFDF6F /* Pods-Adori Sample App Watch WatchKit Extension.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -69,14 +150,38 @@
 			children = (
 				BB3615A026EA9DB50044282A /* GoogleMobileAds.xcframework */,
 				76D527E855A9B4D746AE7AF5 /* Pods_Adori_Sample_App.framework */,
+				7EE66061C6970217CC3EF9E1 /* Pods_Adori_Sample_App_Watch_WatchKit_Extension.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BB6DCBB726FDFA3C00139082 /* Adori Sample App Watch */ = {
+			isa = PBXGroup;
+			children = (
+				BB6DCBB826FDFA3C00139082 /* Interface.storyboard */,
+				BB6DCBBB26FDFA3E00139082 /* Assets.xcassets */,
+			);
+			path = "Adori Sample App Watch";
+			sourceTree = "<group>";
+		};
+		BB6DCBC526FDFA3E00139082 /* Adori Sample App Watch WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				BB6DCBC626FDFA3E00139082 /* InterfaceController.swift */,
+				BB6DCBC826FDFA3E00139082 /* ExtensionDelegate.swift */,
+				BB6DCBCA26FDFA3E00139082 /* ComplicationController.swift */,
+				BB6DCBCC26FDFA3F00139082 /* Assets.xcassets */,
+				BB6DCBCE26FDFA3F00139082 /* Info.plist */,
+			);
+			path = "Adori Sample App Watch WatchKit Extension";
 			sourceTree = "<group>";
 		};
 		BB7689D7265E71DF003A15AB = {
 			isa = PBXGroup;
 			children = (
 				BB7689E2265E71DF003A15AB /* Adori Sample App */,
+				BB6DCBB726FDFA3C00139082 /* Adori Sample App Watch */,
+				BB6DCBC526FDFA3E00139082 /* Adori Sample App Watch WatchKit Extension */,
 				BB7689E1265E71DF003A15AB /* Products */,
 				03686D6F152FB6E062A44B9D /* Pods */,
 				31AA5DB6310A366AF920DD2F /* Frameworks */,
@@ -87,6 +192,8 @@
 			isa = PBXGroup;
 			children = (
 				BB7689E0265E71DF003A15AB /* Adori Sample App.app */,
+				BB6DCBB626FDFA3C00139082 /* Adori Sample App Watch.app */,
+				BB6DCBC126FDFA3E00139082 /* Adori Sample App Watch WatchKit Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -114,6 +221,43 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		BB6DCBB526FDFA3C00139082 /* Adori Sample App Watch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB6DCBD926FDFA3F00139082 /* Build configuration list for PBXNativeTarget "Adori Sample App Watch" */;
+			buildPhases = (
+				BB6DCBB426FDFA3C00139082 /* Resources */,
+				BB6DCBD526FDFA3F00139082 /* Embed App Extensions */,
+				18BD54CA702935200530461E /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BB6DCBC426FDFA3E00139082 /* PBXTargetDependency */,
+			);
+			name = "Adori Sample App Watch";
+			productName = "Adori Sample App Watch";
+			productReference = BB6DCBB626FDFA3C00139082 /* Adori Sample App Watch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		BB6DCBC026FDFA3E00139082 /* Adori Sample App Watch WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB6DCBD826FDFA3F00139082 /* Build configuration list for PBXNativeTarget "Adori Sample App Watch WatchKit Extension" */;
+			buildPhases = (
+				C07A0B310D70405517BC73E5 /* [CP] Check Pods Manifest.lock */,
+				BB6DCBBD26FDFA3E00139082 /* Sources */,
+				BB6DCBBE26FDFA3E00139082 /* Frameworks */,
+				BB6DCBBF26FDFA3E00139082 /* Resources */,
+				2B9669FE39C88799B62F6B1C /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Adori Sample App Watch WatchKit Extension";
+			productName = "Adori Sample App Watch WatchKit Extension";
+			productReference = BB6DCBC126FDFA3E00139082 /* Adori Sample App Watch WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
 		BB7689DF265E71DF003A15AB /* Adori Sample App */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = BB7689F4265E71E1003A15AB /* Build configuration list for PBXNativeTarget "Adori Sample App" */;
@@ -123,10 +267,12 @@
 				BB7689DD265E71DF003A15AB /* Frameworks */,
 				BB7689DE265E71DF003A15AB /* Resources */,
 				0D93F9C5F52BCC43622967A2 /* [CP] Embed Pods Frameworks */,
+				BB6DCBD226FDFA3F00139082 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				BB6DCBD026FDFA3F00139082 /* PBXTargetDependency */,
 			);
 			name = "Adori Sample App";
 			productName = "Adori Sample App";
@@ -139,9 +285,15 @@
 		BB7689D8265E71DF003A15AB /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1250;
+				LastSwiftUpdateCheck = 1300;
 				LastUpgradeCheck = 1250;
 				TargetAttributes = {
+					BB6DCBB526FDFA3C00139082 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					BB6DCBC026FDFA3E00139082 = {
+						CreatedOnToolsVersion = 13.0;
+					};
 					BB7689DF265E71DF003A15AB = {
 						CreatedOnToolsVersion = 12.5;
 					};
@@ -161,11 +313,30 @@
 			projectRoot = "";
 			targets = (
 				BB7689DF265E71DF003A15AB /* Adori Sample App */,
+				BB6DCBB526FDFA3C00139082 /* Adori Sample App Watch */,
+				BB6DCBC026FDFA3E00139082 /* Adori Sample App Watch WatchKit Extension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		BB6DCBB426FDFA3C00139082 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB6DCBBC26FDFA3E00139082 /* Assets.xcassets in Resources */,
+				BB6DCBBA26FDFA3C00139082 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB6DCBBF26FDFA3E00139082 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB6DCBCD26FDFA3F00139082 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BB7689DE265E71DF003A15AB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -197,6 +368,23 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Adori Sample App/Pods-Adori Sample App-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		2B9669FE39C88799B62F6B1C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Adori Sample App Watch WatchKit Extension/Pods-Adori Sample App Watch WatchKit Extension-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Adori Sample App Watch WatchKit Extension/Pods-Adori Sample App Watch WatchKit Extension-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Adori Sample App Watch WatchKit Extension/Pods-Adori Sample App Watch WatchKit Extension-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		31C9F1BDBAB279C6462E4322 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -219,9 +407,42 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		C07A0B310D70405517BC73E5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Adori Sample App Watch WatchKit Extension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		BB6DCBBD26FDFA3E00139082 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB6DCBC926FDFA3E00139082 /* ExtensionDelegate.swift in Sources */,
+				BB6DCBC726FDFA3E00139082 /* InterfaceController.swift in Sources */,
+				BB31284326FE17FF001EE611 /* QueuePlayer.swift in Sources */,
+				BB6DCBCB26FDFA3E00139082 /* ComplicationController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BB7689DC265E71DF003A15AB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -239,7 +460,28 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		BB6DCBC426FDFA3E00139082 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BB6DCBC026FDFA3E00139082 /* Adori Sample App Watch WatchKit Extension */;
+			targetProxy = BB6DCBC326FDFA3E00139082 /* PBXContainerItemProxy */;
+		};
+		BB6DCBD026FDFA3F00139082 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BB6DCBB526FDFA3C00139082 /* Adori Sample App Watch */;
+			targetProxy = BB6DCBCF26FDFA3F00139082 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
+		BB6DCBB826FDFA3C00139082 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BB6DCBB926FDFA3C00139082 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
 		BB7689E9265E71DF003A15AB /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -259,6 +501,124 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		BB6DCBD326FDFA3F00139082 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6Y9WSNDSY7;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = Adori_Sample_App_Watch_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = "Adori Sample App Watch";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.adorilabs.example.ios;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.adorilabs.example.ios.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Debug;
+		};
+		BB6DCBD426FDFA3F00139082 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6Y9WSNDSY7;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = Adori_Sample_App_Watch_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = "Adori Sample App Watch";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.adorilabs.example.ios;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.adorilabs.example.ios.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Release;
+		};
+		BB6DCBD626FDFA3F00139082 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D63B2448F2FC612FE514A3CF /* Pods-Adori Sample App Watch WatchKit Extension.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6Y9WSNDSY7;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Adori Sample App Watch WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Adori Sample App Watch WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKExtensionDelegateClassName = "$(PRODUCT_MODULE_NAME).ExtensionDelegate";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.adorilabs.example.ios.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Debug;
+		};
+		BB6DCBD726FDFA3F00139082 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8BC8B040F1D74E214FFDF6F /* Pods-Adori Sample App Watch WatchKit Extension.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6Y9WSNDSY7;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Adori Sample App Watch WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Adori Sample App Watch WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKExtensionDelegateClassName = "$(PRODUCT_MODULE_NAME).ExtensionDelegate";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.adorilabs.example.ios.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Release;
+		};
 		BB7689F2265E71E1003A15AB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -470,6 +830,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		BB6DCBD826FDFA3F00139082 /* Build configuration list for PBXNativeTarget "Adori Sample App Watch WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB6DCBD626FDFA3F00139082 /* Debug */,
+				BB6DCBD726FDFA3F00139082 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB6DCBD926FDFA3F00139082 /* Build configuration list for PBXNativeTarget "Adori Sample App Watch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB6DCBD326FDFA3F00139082 /* Debug */,
+				BB6DCBD426FDFA3F00139082 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		BB7689DB265E71DF003A15AB /* Build configuration list for PBXProject "Adori Sample App" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

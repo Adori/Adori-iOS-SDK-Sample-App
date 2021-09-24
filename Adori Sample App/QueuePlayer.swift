@@ -3,9 +3,10 @@
 //
 //  Created by Krishna on 13/07/21.
 //
-import AdoriPlayerUI
-import AdoriAudioPlayer
+
+import AdoriAudioPlayerExtended
 import AVKit
+import AVFoundation
 
 /// AVQueuePlayer with extra functionalities and properties
 public class QueuePlayer : AVQueuePlayerWrapper {

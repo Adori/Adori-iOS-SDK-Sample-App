@@ -35,16 +35,16 @@ class withoutAdoriPlayerViewController: UIViewController {
         // This should be called and setup when the user logs in
         AdoriPlayer.shared.setUserId(userId: "Adori_User_ID")
         AdoriPlayer.shared.setKenBurnsEffect(isActive: false)
-       
+        AdoriPlayer.shared.setActionEnabled(enabled: false)
+        AdoriPlayer.shared.setNextPreviousEnabled(enabled: false)
         
         // Step 4: Add the AdoriTagsUIViewController into tagView
         let adoriTagsViewController = AdoriTagsUIViewController()
-        adoriTagsViewController.playerDelegate = CustomPlayer.audioPlayer
         adoriTagsViewController.view.frame = self.tagView.bounds
         self.tagView.addSubview(adoriTagsViewController.view)
         self.addChild(adoriTagsViewController)
         
-        AdoriPlayer.shared.setActionEnabled(enabled: false)
+        
         
     }
     

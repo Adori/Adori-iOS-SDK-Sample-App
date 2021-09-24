@@ -8,7 +8,12 @@
 
 
 import AVKit
-import SwiftUI
+import AVFoundation
+
+
+#if os(iOS)
+import AdoriTagsUI
+#endif
 
 
 class UniversalAudioPlayer {
@@ -37,6 +42,11 @@ class UniversalAudioPlayer {
         self.playerIndex = index
         let audioItem = AVPlayerItem(url: URL(string: "https://static.adorilabs.com/audiotracks/episode--ep_oMTNlIZRGh9bp4SkEJ33OJRBCueXpSifM/v1/5901-IBGe8DsrAZinBcEL_adorified.mp3")!)
         self.audioPlayer = QueuePlayer(items: [audioItem], index: playerIndex)
+        
+        #if os(iOS)
+        AdoriTagsService.sharedInstance.setQueuePlayer(self.audioPlayer)
+        #endif
+        
         audioPlayer.playItemWithIndex(playerIndex)
         audioPlayer.actionAtItemEnd = .none
         observePlayer()
