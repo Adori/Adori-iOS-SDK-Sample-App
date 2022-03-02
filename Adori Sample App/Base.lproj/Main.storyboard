@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mHn-q3-uZw">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mHn-q3-uZw">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -187,6 +187,18 @@
                                     <action selector="playBtnClicked:" destination="fjV-FO-0L2" eventType="touchUpInside" id="Qbt-yb-ewa"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="esd-qy-nYe">
+                                <rect key="frame" x="20" y="728" width="78" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="78" id="Adf-0Z-ubl"/>
+                                    <constraint firstAttribute="height" constant="40" id="IlB-oU-3kp"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="1X"/>
+                                <connections>
+                                    <action selector="speedChangeBtnClicked:" destination="fjV-FO-0L2" eventType="touchUpInside" id="gnn-Ib-jin"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="IqK-xS-2Xi"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -195,7 +207,9 @@
                             <constraint firstItem="IqK-xS-2Xi" firstAttribute="trailing" secondItem="3ug-e1-5Vk" secondAttribute="trailing" constant="20" id="6BB-LM-fNn"/>
                             <constraint firstItem="v4T-sk-N20" firstAttribute="top" secondItem="3ug-e1-5Vk" secondAttribute="bottom" constant="8" symbolic="YES" id="J6G-9f-oSg"/>
                             <constraint firstItem="v4T-sk-N20" firstAttribute="centerX" secondItem="0PN-fb-sUo" secondAttribute="centerX" id="LXO-El-pE5"/>
+                            <constraint firstItem="esd-qy-nYe" firstAttribute="leading" secondItem="IqK-xS-2Xi" secondAttribute="leading" constant="20" id="Rcw-R2-ypM"/>
                             <constraint firstItem="mpi-4j-cTE" firstAttribute="centerX" secondItem="0PN-fb-sUo" secondAttribute="centerX" id="bKF-wp-r0x"/>
+                            <constraint firstItem="esd-qy-nYe" firstAttribute="centerY" secondItem="mpi-4j-cTE" secondAttribute="centerY" id="gkm-4T-F1j"/>
                             <constraint firstItem="3ug-e1-5Vk" firstAttribute="leading" secondItem="IqK-xS-2Xi" secondAttribute="leading" constant="20" id="pij-6Z-8cA"/>
                             <constraint firstItem="3ug-e1-5Vk" firstAttribute="top" secondItem="IqK-xS-2Xi" secondAttribute="top" id="x8B-os-IVM"/>
                         </constraints>
@@ -203,6 +217,7 @@
                     <navigationItem key="navigationItem" id="UaY-30-Zig"/>
                     <connections>
                         <outlet property="playButton" destination="mpi-4j-cTE" id="8Rl-85-kLZ"/>
+                        <outlet property="speedChangeButton" destination="esd-qy-nYe" id="qaf-Fu-fiE"/>
                         <outlet property="tagView" destination="v4T-sk-N20" id="oMS-Ga-f8D"/>
                     </connections>
                 </viewController>

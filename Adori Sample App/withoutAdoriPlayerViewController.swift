@@ -20,11 +20,27 @@ class withoutAdoriPlayerViewController: UIViewController {
     
     var isAudioPlaying: Bool = true
     
-    
+    var currentPlayerRate = 1.0
+    var canChangeSpeed = false
+    @IBOutlet weak var speedChangeButton: UIButton!
     
     
     let CustomPlayer = UniversalAudioPlayer(index: 0)
     
+    @IBAction func speedChangeBtnClicked(_ sender: Any) {
+        
+        if canChangeSpeed {
+            currentPlayerRate += 0.25
+            
+            if currentPlayerRate > 2.0 {
+                currentPlayerRate = 0.5
+            }
+            
+            CustomPlayer.audioPlayer.rate = Float(currentPlayerRate)
+            
+            self.speedChangeButton.setTitle("\(currentPlayerRate)", for: .normal)
+        }
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -40,6 +56,7 @@ class withoutAdoriPlayerViewController: UIViewController {
         
         // Step 4: Add the AdoriTagsUIViewController into tagView
         let adoriTagsViewController = AdoriTagsUIViewController()
+        adoriTagsViewController.adoriIDDelegate = self
         adoriTagsViewController.view.frame = self.tagView.bounds
         self.tagView.addSubview(adoriTagsViewController.view)
         self.addChild(adoriTagsViewController)
@@ -65,4 +82,11 @@ class withoutAdoriPlayerViewController: UIViewController {
     
     
     
+}
+
+
+extension withoutAdoriPlayerViewController: AdoriTagsUIViewControllerAdoriIDDelegate {
+    func playerSpeedChangeAvailable() {
+        self.canChangeSpeed = true
+    }
 }
