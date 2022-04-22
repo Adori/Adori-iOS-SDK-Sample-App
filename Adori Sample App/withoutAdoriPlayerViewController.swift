@@ -37,6 +37,10 @@ class withoutAdoriPlayerViewController: UIViewController {
             }
             
             CustomPlayer.audioPlayer.rate = Float(currentPlayerRate)
+          
+            
+            // Add this line to make sure the episode image doesnt show up inbetween tags
+            AdoriTagsService.sharedInstance.audioPlayerPlaybackSpeedChanged(Float(currentPlayerRate))
             
             self.speedChangeButton.setTitle("\(currentPlayerRate)", for: .normal)
         }
@@ -77,6 +81,14 @@ class withoutAdoriPlayerViewController: UIViewController {
         }
         
         self.isAudioPlaying = !self.isAudioPlaying
+        
+        // Change the can change speed to true after 10 seconds. This is because
+        // we will find the AdoriID within 7 seconds. If not, it means that audio doesnt have
+        // AdoriID
+        
+        Timer.scheduledTimer(withTimeInterval: 10.0, repeats: false) { _ in
+            self.canChangeSpeed = true
+        }
         
     }
     
