@@ -6,6 +6,8 @@ This repository contains sample app for the Adori SDK for iOS. These demonstrate
 ## Run the sample app
 To run the sample app, simply go to the project folder and run `pod install`. Open the project, build and run the application.
 
-## Documentation 
+## Updates
 
-Documentation for the integrated SDK can be found  [here](https://help.adorilabs.com/sdk/ios/)
+2.1.27 Update : This update brings the ability to do play listing. You will need to reset the Player speed to 1.0 at the end of each item in the queue player. This can be achieved by observing the player as shown in the sample app. Check for `canChangeSpeed` to be enabled right after we get the new AdoriID to reset the player speed to normal.
+
+
