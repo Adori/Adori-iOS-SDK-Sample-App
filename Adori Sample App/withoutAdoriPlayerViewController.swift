@@ -30,9 +30,9 @@ class withoutAdoriPlayerViewController: UIViewController {
     @IBAction func speedChangeBtnClicked(_ sender: Any) {
         
         if canChangeSpeed {
-            currentPlayerRate += 0.25
+            currentPlayerRate += 0.5
             
-            if currentPlayerRate > 2.0 {
+            if currentPlayerRate > 6.0 {
                 currentPlayerRate = 0.5
             }
             
@@ -65,13 +65,18 @@ class withoutAdoriPlayerViewController: UIViewController {
         self.tagView.addSubview(adoriTagsViewController.view)
         self.addChild(adoriTagsViewController)
         
+        CustomPlayer.audioPlayer.rate = Float(currentPlayerRate)
+        // Add this line to make sure the episode image doesnt show up inbetween tags
+        AdoriTagsService.sharedInstance.audioPlayerPlaybackSpeedChanged(Float(currentPlayerRate))
+        self.speedChangeButton.setTitle("\(currentPlayerRate)", for: .normal)
+        
         
         
     }
     
     
     @IBAction func playBtnClicked(_ sender: Any) {
-        self.CustomPlayer.togglePlayer()
+        
         
         
         if self.isAudioPlaying {
@@ -89,6 +94,13 @@ class withoutAdoriPlayerViewController: UIViewController {
         Timer.scheduledTimer(withTimeInterval: 10.0, repeats: false) { _ in
             self.canChangeSpeed = true
         }
+        
+        CustomPlayer.audioPlayer.rate = Float(currentPlayerRate)
+        // Add this line to make sure the episode image doesnt show up inbetween tags
+        AdoriTagsService.sharedInstance.audioPlayerPlaybackSpeedChanged(Float(currentPlayerRate))
+        self.speedChangeButton.setTitle("\(currentPlayerRate)", for: .normal)
+        
+        self.CustomPlayer.togglePlayer()
         
     }
     
